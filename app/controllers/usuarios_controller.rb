@@ -3,10 +3,10 @@ class UsuariosController < ApplicationController
   def index
   	@usuarios = Usuario.all
     if params[action: 'Socio']
-      @usuario = Usuario.where(category: Socio)
+      @usuario = Usuario.where(category: 'Socio')
     end
-    if params[id: 'category_nuevo']
-     @usuario = Usuario.where(category: Nuevo)
+    if params[action: 'Nuevo']
+     @usuario = Usuario.where(category: 'Nuevo')
     end 
   end
 
