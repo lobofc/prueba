@@ -2,11 +2,13 @@ class UsuariosController < ApplicationController
 
   def index
   	@usuarios = Usuario.all
-    if params[action: 'Socio']
-      @usuario = Usuario.where(category: 'Socio')
-    end
-    if params[action: 'Nuevo']
-     @usuario = Usuario.where(category: 'Nuevo')
+    if params[:filter].present?
+      if params[:filter] == 'Socio'
+        @usuarios = Usuario.where(category: 'Socio')
+      end
+      if params[:filter] == 'Nuevo'
+       @usuarios = Usuario.where(category: 'Nuevo')
+      end
     end
   end
 
