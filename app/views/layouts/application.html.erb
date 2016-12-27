@@ -15,16 +15,15 @@
       <ul>
         <li><%= link_to "Inicio", usuarios_path %></li>
         <li><%= link_to "Crear", new_usuario_path %></li>
-        <li><%= link_to "Socio", usuarios_path(:action => 'Socio') %></li>
-        <li><%= link_to "Nuevo", usuarios_path(:action => 'Nuevo') %></li>
-        
-        
-        
-        
+        <li><%= link_to "Socio", usuarios_path(filter: 'Socio') %></li>
+        <li><%= link_to "Nuevo", usuarios_path(filter: 'Nuevo') %></li>
+
+
+
+
       </ul>
     </div>
 
     <%= yield %>
   </body>
 </html>
-
