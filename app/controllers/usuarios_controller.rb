@@ -5,9 +5,8 @@ class UsuariosController < ApplicationController
     if params[:filter].present?
       if params[:filter] == 'Socio'
         @usuarios = Usuario.where(category: 'Socio')
-      end
-      if params[:filter] == 'Nuevo'
-       @usuarios = Usuario.where(category: 'Nuevo')
+      elsif params[:filter] == 'Nuevo'
+        @usuarios = Usuario.where(category: 'Nuevo')
       end
     end
   end
