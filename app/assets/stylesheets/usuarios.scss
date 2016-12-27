@@ -1,0 +1,76 @@
+// Place all the styles related to the usuarios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#cabecera {
+	background: #0D80F2;
+	color: #fff;
+	font-size: 24px;
+	width: 100%;
+	padding: 10px;
+}
+
+#menu {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px;
+}
+
+.productos {
+   border: 1px solid #8FABA8;
+   padding: 2px;
+   width: 300px;
+   float: left;
+   margin-left: 15px; 
+   margin-top: 10px;
+}
+
+
+
+/* vista inicio */
+
+.caja {
+   width: 260px;
+   height: 475px;
+   border: solid 1px #000;
+   margin-top: 20px;
+   margin-left: 10px;
+   float: left;
+}
+
+.video2 {
+   width: 250px;
+   height: 150px;
+}
+
+.texto {
+   width: 250px;
+   height: 220px;  
+}
+
+
+/* vista show */
+
+.contenedor {
+   float: left;
+}
+
+.video {
+   width: 560px;
+   heigth: 315px;
+   margin: 20px;
+}
+
+.parrafo {
+   width: 560px;
+   margin: 20px;
+}
+
+#datos {
+   width: 300px;
+   font-size: 20px;
+   margin: 20px;
+   float: left;
+}

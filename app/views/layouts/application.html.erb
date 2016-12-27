@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tienda</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="contenedor"></div>
+    <div id="cabecera">Tienda ClashOver</div>
+    <div id="menu">
+      <ul>
+        <li><%= link_to "Inicio", usuarios_path %></li>
+        <li><%= link_to "Crear", new_usuario_path %></li>
+        <li><%= link_to "Socio", usuarios_path(:action => Socio) %></li>
+        <li><%= link_to "Nuevo", usuarios_path(:action => Nuevo) %></li>
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>
+

@@ -1,0 +1,10 @@
+<h1>Muestra</h1>
+
+<% @usuarios.each do |p| %>
+<div class="caja">
+  <div class="video2"><%= video_tag "{video.vid_url}", :size => "250x150", :controls => true %></div>
+  <div class="texto"><%= p.contenido %></div>
+  <div class="texto"><%= p.category %></div>
+  
+</div>
+<% end %>

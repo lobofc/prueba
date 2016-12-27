@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <%= form_for(@usuario) do |p| %>
+       
+      <div class="form-group"><br>
+          <%= p.label "Video" %>
+          <%= p.text_field :video %>
+      </div> 
+
+      <div class="form-group"><br>
+          <%= p.label "Concepto" %>
+          <%= p.text_area :contenido, :cols => 35, rows: 8  %>
+      </div>       
+
+       <div class="form-group"><br>
+          <%= label_tag 'category_socio', 'Socio' %>
+          <%= check_box_tag 'usuario[category][]', 'Socio', checked('Socio'), id: 'category_socio' %>
+
+          <%= label_tag 'category_nuevo', 'Nuevo' %>
+          <%= check_box_tag 'usuario[category][]', 'Nuevo', checked('Nuevo'), id: 'category_nuevo' %>          
+        </div><br> 
+          <%= p.submit "Crear" %>
+          <% end %>
+         </form>
+       </div> 
+     </div> 
+    </div>
